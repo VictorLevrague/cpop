@@ -101,6 +101,3 @@ With Geant4 multithread (using hadd root executable to merge outputs):
 ./complexRadiation -m data/run.mac -t 4
 hadd result.root output_t{0..3}.root
 
-
-# project
-# project
