@@ -31,9 +31,9 @@
 
 
 # Those commands are defined in G4EmParametersMessenger.cc
-/process/eLoss/minKinEnergy 100 eV
-/process/eLoss/maxKinEnergy 1 GeV
-/process/em/auger true
+# /process/eLoss/minKinEnergy 100 eV
+# /process/eLoss/maxKinEnergy 1 GeV
+# /process/em/auger true
 
 # Those commands are defined in G4ProductionCutsTableMessenger.cc
 #/cuts/setLowEdge 0.0001 mm
