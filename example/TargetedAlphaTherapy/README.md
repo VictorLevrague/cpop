@@ -34,6 +34,23 @@ Options
 
 Simulation initialization can be a bit faster if .gdml writing is deactivated in SpheroidalCellMesh.cc
 
+#######################################################################
+Output
+
+With the "/cpop/population/eventInfo 1" option (the intended one for this example), the output root file contains :
+
+- the initial name of the Particle in the event : here an alpha. If the name is "EndOfRun", it means that the data are at the run level, not at the event action one (each value will be equal to 0, except the doses in cells, and their id)
+- each time the particle enter in a nucleus during the event : its entrances energies
+- each time the particle exit in a nucleus during the event : its exit energies. If the particle stops in the nucleus, Ef = 0
+- ID of the cell that the particle crossed
+- eventID
+- ID of the cell from where the particle originated
+- If particleName is "EndOfRun", dose deposited in the cell nucleus
+- If particleName is "EndOfRun", dose deposited in the cell
+- If particleName is "EndOfRun", dose deposited in the spheroid
+- If the particle is this event has diffused, equal to 1.
+
+
 ########################################################################
 How to use ?
 
